@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fred Antelll</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<style>
+  .section-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section-header {
+    margin: 0px;
+  }
+  .section-body {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+
+  }
+  .section-photo img {
+    width: 100px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+  }
+  .skillset .category {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .badge-container {
+    width: 100px;
+    float: left;
+  }
+  .badge-container img:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .badge-img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+  }
+  .badge-txt {
+    text-align: center;
+  }
+  #prog-profiles {
+  }
+  .project {
+    border: 1px dashed #ccc;
+    width: 49%;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    min-width: 250px;
+  }
+  .project:nth-child(2n + 0) {
+    margin-right: 2%;
+  }
+
+  @media (max-width: 650px) {
+    .project {
+      width: 98%;
+    }
+  }
+</style>
+
+<div class="container">
+
+<div class="section-container">
+  <h1 class="section-header">Hello</h1>
+
+  <div class="section-body">
+    <div class="section-photo"><img src="images/fred.jpg"</div>
+    <p>My name is Fredrik Antell.</p>
+    <p>I'm a Front End developer.  I mostly write Javascript and ClojureScript.</p>
+    <p>I'm also a communications expert and have advised individuals, teams, and executives.</p>
+    <p>Learning makes me happy. So does connecting the big picture with the details.</p>
+  </div>
+</div>
+
+<div class="section-container">
+  <h1 class="section-header">Programming</h1>
+  <div class="section-body">
+    <p id="prog-overview">I'm a JS developer, who loves ClojureScript and functional programming.
+      I'm excited to see implementations of some of the best ideas in CLJS (immutability/persistent data
+      structures, CSP, etc) filtering back into Javascript!
+
+      <!--You can get an idea of what I know and how I write code check out some of the other tabs.-->
+    </p>
+
+    <div id="prog-skills">Here are some of the technologies I've used in projects:<br>
+      <div class="skillset"><span class="category">Languages:</span> JavaScript, HTML/5, CSS/LESS/SASS, Clojure,
+        ClojureScript</div>
+      <div class="skillset"><span class="category">JavaScript libraries:</span> jQuery, node.js, Express,
+        Angular.js, Backbone.js, React.js, Grunt.js</div>
+      <div class="skillset"><span class="category">Clojure/Script libraries:</span> core.async, Om, compojure, ring, liberator, lib-noir</div>
+      <div class="skillset"><span class="category">Additional skills:</span> Git, Github, MVC, REST, SQL, NoSQL, Linux, functional programming</div>
+    </div>
+
+    <br>
+
+    <div id="prog-profiles">
+      <p>Here are some of my profiles from 2013 and beyond.</p>
+      <a href="http://teamtreehouse.com/fredrikantell"><div class="badge-container">
+        <img class="badge-img" src="./images/treehouse.svg">
+        <div class="badge-txt">Treehouse</div>
+      </div></a>
+      <a href="https://www.codeschool.com/users/foantell"><div class="badge-container">
+        <img class="badge-img" src="./images/codeschool-logo.png">
+        <div class="badge-txt">CodeSchool</div>
+      </div></a>
+      <a href="http://github.com/fredantell"><div class="badge-container">
+        <img class="badge-img" src="./images/GitHub-Mark-64px.png">
+        <div class="badge-txt">Github</div>
+      </div></a>
+      <a href="http://codepen.io/fredantell/"><div class="badge-container">
+        <img class="badge-img" src="./images/codepen-logo.png">
+        <div class="badge-txt">CodePen</div>
+      </div></a>
+      <div style="clear:both;"></div>
+    </div>
+
+    <br>
+
+    <div id="prog-projects">
+      <p>Here are links to a few repos and simple examples deployed outside of codepen.</p>
+      <div class="project">
+        <h4>Node/Bootstrap</h4>
+        <p>Node.js server side templated website using Express and Bootstrap</p>
+        <a href="https://github.com/fredantell/learning#bootstrapwebsite">Github Readme</a><br>
+        <a href="http://shrouded-badlands-7922.herokuapp.com/">Live link</a>
+      </div>
+      <div class="project">
+        <h4>Omodoro</h4>
+        <p>A Pomodoro timer built in CLJS and Nodewebkit.  Submits to a 3rd party API to automate logging.</p>
+        <a href="https://github.com/fredantell/omodoro">Github Readme</a>
+      </div>
+      <div class="project">
+        <h4>AngNews</h4>
+        <p>Hacker News clone built with angular and firebase for backend.</p>
+        <a href="https://github.com/fredantell/angnews">Github Readme</a><br>
+        <a href="http://fredantell.github.io/angnews">Live link</a>
+      </div>
+      <div class="project">
+        <h4>Whack-a-mole game</h4>
+        <p>Whack-a-mole game using CSS animations</p>
+        <a href="https://github.com/fredantell/whackamole">Github Readme</a><br>
+        <a href="http://fredantell.github.io/whackamole/mole">Live link</a>
+      </div>
+      <div class="project">
+        <h4>JS Events Examples</h4>
+        <p>Collection of mini projects served using Node.js and Express</p>
+        <a href="https://github.com/fredantell/learning#jsevents">Github Readme</a><br>
+        <a href="http://jsevents.herokuapp.com/">Live link</a>
+      </div>
+      <div class="project">
+        <h4>CSS Centering Example</h4>
+        <p>Simple gallery page that makes use of CSS vertical/horizontal centering</p>
+        <a href="https://github.com/fredantell/learning#modalgallery">Github Readme</a><br>
+        <a href="http://modal-gallery.herokuapp.com/">Live link</a>
+      </div>
+
+      <div style="clear:both;"></div>
+
+
+    </div>
+
+    <br>
+  </div>
+</div>
+
+<div class="section-container">
+  <h1 class="section-header">Communications</h1>
+  <div class="section-body">
+    <div>I love people, but didn't always understand them very well. So I taught myself how.</div>
+    <div>I've worked with over 100 individuals personally and professionally, as well as teams and executives.</div>
+    <div>I also mentor engineers on their interpersonal and team skills.</div>
+    <!--<div>Sometimes I write about communications strategies.</div>-->
+  </div>
+</div>
+
+<div class="section-container">
+  <h1 class="section-header">Contact Me</h1>
+  <div class="section-body">
+    <div>Get in touch via:<br>
+      Email: fred@fredantell.com<br>
+      Twitter: <a href="http://twitter.com/fredantell">@fredantell</a><br>
+      LinkedIn: <a href="http://www.linkedin.com/in/fredrikantell">Fred Antell</a><br></div>
+    <!--<div>Sometimes I write about communications strategies.</div>-->
+  </div>
+</div>
+
+</div> <!--End div.container-->
+</body>
+</html>
